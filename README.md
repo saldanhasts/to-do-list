@@ -8,7 +8,7 @@ O objetivo é testar meus conhecimentos antes de me aprofundar em frameworks, cr
 <br>
 
 <p align="center">
-  <img alt="Preview To-Do List" src="https://user-images.githubusercontent.com/saldanhasts/github/preview.png" width="100%">
+  <img alt="Preview To-Do List" src="https://github.com/saldanhasts/to-do-list/blob/main/preview.png" width="100%">
 </p>
 
 <p align="center">
