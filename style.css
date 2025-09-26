@@ -1,0 +1,134 @@
+/* Reset e estilo base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #f0f0f0;
+}
+
+.container {
+  background: #2c2a36;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: #00ff7f;
+}
+
+.instructions {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background: #00ff7f;
+  color: #2c2a36;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #cccccc1f;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  background: #444357;
+  color: #ccc;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.filters button.active {
+  background: #00ff7f;
+  color: #2c2a36;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background: #3a3846;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+li:hover {
+  transform: scale(1.02);
+  background: #4a4860;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.task-emoji {
+  flex-shrink: 0;
+}
+
+li button {
+  background: transparent;
+  color: #ff4d4d;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}

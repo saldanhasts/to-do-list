@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Profissional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+
+    <!-- Instruções para usuários leigos -->
+    <p class="instructions">
+      Digite sua tarefa no campo abaixo e clique em "Adicionar".<br>
+      Clique na tarefa para marcá-la como concluída ✅.<br>
+      Clique no X para apagar a tarefa.
+    </p>
+
+    <!-- Formulário para adicionar tarefas -->
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Digite sua tarefa aqui..." required>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <!-- Filtros de visualização -->
+    <div class="filters">
+      <button id="all" class="active">Todas</button>
+      <button id="pending">Pendentes</button>
+      <button id="completed">Concluídas</button>
+    </div>
+
+    <!-- Lista de tarefas -->
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
